@@ -48,8 +48,7 @@ public class TestSpringRest {
 	}
 	
 	@Test 
-	public void testGet(){
-		
+	public void testGet(){		
 		SimpleBean simpleBean = restTemplate.getForEntity(startUri + "/get/99", SimpleBean.class).getBody();
 		assertNotNull(simpleBean);
 		assertEquals(simpleBean.getValue(), 99);
