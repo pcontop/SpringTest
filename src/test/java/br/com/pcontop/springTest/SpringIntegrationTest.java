@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(Application.class)
 @WebIntegrationTest
-public class TestSpringRest {
+public class SpringIntegrationTest {
 
 	@Value("${local.server.port}")   
 	int port;
